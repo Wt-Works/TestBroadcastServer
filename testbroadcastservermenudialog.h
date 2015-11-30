@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 /*
 TestBroadcastServer, tool to test WtBroadcastServer
-Copyright (C) 2011-2014 Richel Bilderbeek
+Copyright (C) 2011-2015 Richel Bilderbeek
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -36,7 +36,6 @@ struct MenuDialog : public ::ribi::MenuDialog
 
   About GetAbout() const noexcept;
   Help GetHelp() const noexcept;
-  boost::shared_ptr<const Program> GetProgram() const noexcept;
   std::string GetVersion() const noexcept;
   std::vector<std::string> GetVersionHistory() const noexcept;
 

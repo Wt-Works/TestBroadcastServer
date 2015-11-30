@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 /*
 TestBroadcastServer, tool to test WtBroadcastServer
-Copyright (C) 2011-2014 Richel Bilderbeek
+Copyright (C) 2011-2015 Richel Bilderbeek
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,7 +19,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 //From http://www.richelbilderbeek.nl/ToolTestBroadcastServer.htm
 //---------------------------------------------------------------------------
 #include "about.h"
-#include "richelbilderbeekprogram.h"
 #include "testbroadcastservermenudialog.h"
 #include "trace.h"
 
@@ -64,14 +63,6 @@ ribi::Help ribi::ToolTestBroadcastServer::MenuDialog::GetHelp() const noexcept
 
     }
   );
-}
-
-boost::shared_ptr<const ribi::Program> ribi::ToolTestBroadcastServer::MenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p(new ProgramTestBroadcastServer);
-  assert(p);
-  return p;
-
 }
 
 std::string ribi::ToolTestBroadcastServer::MenuDialog::GetVersion() const noexcept
